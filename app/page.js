@@ -11,7 +11,7 @@ export default async function Home() {
   const carouselProducts = await getCarouselProducts();
 
   return (
-    <main className="my-10 space-y-10">
+    <main className="my-10 space-y-10 overflow-hidden">
       <ProductCarousel products={carouselProducts}/>
       <ProductExplorer/>
     </main>
