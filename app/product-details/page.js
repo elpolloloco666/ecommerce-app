@@ -8,7 +8,7 @@ const getData = async(id) => {
 
 const stripeCheckout = async(item,token) => {
   'use server'
- const res = await fetch('http://localhost:3000/api/create-checkout-session',{
+ const res = await fetch('https://ecommerce-app-mu-seven.vercel.app/api/create-checkout-session',{
   method: 'POST',
   body:JSON.stringify({items:[item],token}),
   headers: {

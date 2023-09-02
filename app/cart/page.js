@@ -7,7 +7,7 @@ import Unauthorized from '@/components/Unauthorized';
 
 const stripeCheckout = async(items,token) => {
     
-    const session = await fetch('http://localhost:3000/api/create-checkout-session',{
+    const session = await fetch('https://ecommerce-app-mu-seven.vercel.app/api/create-checkout-session',{
       method: 'POST',
       body:JSON.stringify({items:items,token}),
       headers: {
