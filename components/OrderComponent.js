@@ -23,7 +23,7 @@ const OrderComponent = ({orders}) => {
     ))
     ): (
       <div>
-        <p className='text-gray-500'>You have not buy anything yet</p>
+        <p className='text-gray-500'>You have not bought anything yet</p>
       </div>
     )}
         

@@ -26,7 +26,7 @@ const page = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      const createUser = await fetch('https://ecommerce-api-k3g5.onrender.com/api/v1/customers',{
+      const createUser = await fetch('https://ecommerce-api-k3g5.onrender.com/api/v1/customers/',{
       method: 'POST',
       body: JSON.stringify(customer),
       headers: {
